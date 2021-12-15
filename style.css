@@ -1,2 +1,148 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+}
+
+main {
+    height: 60  0px;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border-radius: 20px;
+    background: hsl(216, 50%, 16%);
+}
+
+main>img {
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text{
+    height: 90px;
+    width: 350px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.span-text{
+    height: 50px;
+    width: 350px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  /*   background:silver; */
+}
+
+
+/* Estilo do Texto */
+
+.text > h1 {
+    
+    color: white;
+}
+
+.text > h1:hover {
+    
+   color: hsl(178, 100%, 50%);
+}
+
+h2{
+    text-align: center;
+}
+
+h2::after {
+    background-color:hsl(215, 32%, 27%);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 90%
+}
+
+p {
+    color: hsl(215, 32%, 27%);
+    font-size: 18px;
+}
+
+span {
+    color: hsl(178, 100%, 50%);
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+}
+
+.span-text > span::before {
+    content: url("images/icon-ethereum.svg");
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-right: 5px;
+}
+
+.span-text > span~span {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    display: inline;
+}
+
+.span-text > span~span::before {
+    content: url("images/icon-clock.svg");
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/* Atribuição */
+
+.creator{
+    height:50px;
+    width: 350px;
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creator img{
+    height:40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator h3{
+    color:hsl(215, 32%, 27%);
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.creator span:nth-child(2n+1){
+    color:hsl(0, 0%, 100%);
+}
+
+.creator span:hover{
+    color:hsl(178, 100%, 50%);
+}
