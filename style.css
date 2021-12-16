@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    height: 60  0px;
+    height: 600px;
     width: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -145,4 +145,43 @@ span {
 
 .creator span:hover{
     color:hsl(178, 100%, 50%);
+}
+
+@media(max-width: 375px){
+
+    main{
+        height: 500px;
+        width: 300px;
+    }
+
+    main>img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .text{
+        height: 90px;
+        width: 250px;
+        
+    }
+    
+    .span-text{
+        height: 50px;
+        width: 250px;
+       
+    }
+
+    p {
+        font-size: 12px;
+    }
+    
+    span {
+       font-size: 12px;
+    }
+    
+    h1{
+        font-size:20px;
+    }
+    
+
 }
