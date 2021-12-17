@@ -19,7 +19,7 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- URL do site ativo: [Adicionar URL do site ativo aqui] (https://your-live-site-url.com)
+- URL do site ativo: [Github Pages](https://raru8.github.io/Card-Equilibrium/)
 
 ### Construído com
 
