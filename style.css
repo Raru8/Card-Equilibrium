@@ -9,6 +9,7 @@ body {
     height: 900px;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Outfit', sans-serif;
@@ -22,7 +23,7 @@ main {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     border-radius: 20px;
     background: hsl(216, 50%, 16%);
 }
@@ -36,46 +37,46 @@ main>img {
     margin-right: auto;
 }
 
-.text{
+.text {
     height: 90px;
     width: 350px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
 
-.span-text{
+.span-text {
     height: 50px;
     width: 350px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-  /*   background:silver; */
+    /*   background:silver; */
 }
 
 
 /* Estilo do Texto */
 
-.text > h1 {
-    
+.text>h1 {
+
     color: white;
 }
 
-.text > h1:hover {
-    
-   color: hsl(178, 100%, 50%);
+.text>h1:hover {
+
+    color: hsl(178, 100%, 50%);
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
 h2::after {
-    background-color:hsl(215, 32%, 27%);
+    background-color: hsl(215, 32%, 27%);
     content: "";
     display: inline-block;
     height: 1px;
@@ -94,7 +95,7 @@ span {
     display: inline;
 }
 
-.span-text > span::before {
+.span-text>span::before {
     content: url("images/icon-ethereum.svg");
     display: inline-block;
     vertical-align: middle;
@@ -102,13 +103,13 @@ span {
     padding-right: 5px;
 }
 
-.span-text > span~span {
+.span-text>span~span {
     color: hsl(215, 51%, 70%);
     font-size: 18px;
     display: inline;
 }
 
-.span-text > span~span::before {
+.span-text>span~span::before {
     content: url("images/icon-clock.svg");
     display: inline-block;
     vertical-align: middle;
@@ -117,71 +118,87 @@ span {
 
 /* Atribuição */
 
-.creator{
-    height:50px;
+.creator {
+    height: 50px;
     width: 350px;
-    display:flex;
+    display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.creator img{
-    height:40px;
+.creator img {
+    height: 40px;
     width: 40px;
     border: 1px solid white;
     border-radius: 50%;
 }
 
-.creator h3{
-    color:hsl(215, 32%, 27%);
+.creator h3 {
+    color: hsl(215, 32%, 27%);
     padding-left: 20px;
     text-align: justify;
 }
 
-.creator span:nth-child(2n+1){
-    color:hsl(0, 0%, 100%);
+.creator span:nth-child(2n+1) {
+    color: hsl(0, 0%, 100%);
 }
 
-.creator span:hover{
-    color:hsl(178, 100%, 50%);
+.creator span:hover {
+    color: hsl(178, 100%, 50%);
 }
 
-@media(max-width: 375px){
+a{
+    color: hsl(178, 100%, 50%);
+}
 
-    main{
-        height: 500px;
-        width: 300px;
+@media(max-width: 375px) {
+
+    main {
+        height: 550px;
+        width: 330px;
     }
 
     main>img {
-        height: 350px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
     }
 
-    .text{
+    .text {
         height: 90px;
-        width: 250px;
-        
-    }
-    
-    .span-text{
-        height: 50px;
-        width: 250px;
-       
+        width: 300px;
+
     }
 
-    p {
-        font-size: 12px;
+    .span-text
+     {
+        height: 30px;
+        width: 300px;
+       /*  background-color: silver; */
     }
-    
+
+    .creator {
+        height: 50px;
+        width: 300px;
+    }
+
+    p,
     span {
-       font-size: 12px;
+        font-size: 12;
     }
-    
-    h1{
-        font-size:20px;
+
+    h1 {
+        font-size: 1.5em;
     }
-    
+
+    .creator img {
+        height: 30px;
+        width: 30px;
+    }
+
+    body {
+        height: 665px;
+        width: 375px;
+    }
 
 }
